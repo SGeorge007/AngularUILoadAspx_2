@@ -1,0 +1,101 @@
+<nav class="navbar text-bg-dark">
+  <div class="container-fluid">
+
+    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <hrb-link href="javascript:void (0)" theme="white" class="me-2 fw-bold" underline="false" icon="menu" icon-position="left">Emerald Perks</hrb-link>
+    </button>
+
+    <div class="offcanvas offcanvas-start text-bg-dark offcanvas-horizontal-width" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <hrb-text style-type="body-copy" class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Emerald Perks</hrb-text>
+          <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+            <hrb-icon name="close"></hrb-icon>
+          </button>
+      </div>
+      <div class="offcanvas-body">
+        <hrb-link href="javascript:void (0)" [routerLink]="''" theme="white" class="ms-3" underline="false" icon="nav-home" icon-position="left">Home</hrb-link>
+        <div class="dropdown mt-3">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <hrb-text style-type="body-copy">Loan Products</hrb-text>
+          </button>
+          <ul class="dropdown-menu text-bg-dark">
+            <li>
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" class="me-2" underline="false" data-bs-dismiss="offcanvas">Emerald Advance Application</hrb-link>
+            </li>
+            <li>
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" class="me-2" underline="false" data-bs-dismiss="offcanvas">Emerald Advance Pay Down Consent</hrb-link>
+            </li>
+            <li>
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" class="me-2" underline="false" data-bs-dismiss="offcanvas">Emerald Advance Reset Request</hrb-link>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <hrb-text style-type="body-copy">Emerald Card</hrb-text>
+          </button>
+          <ul class="dropdown-menu text-bg-dark">
+            <li>
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" class="me-2" underline="false" data-bs-dismiss="offcanvas">Issuance/Reissuance</hrb-link>
+            </li>
+            <li>
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" class="me-2" underline="false" data-bs-dismiss="offcanvas">Direct Deposit Form</hrb-link>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <hrb-text style-type="body-copy">Emerald Savings</hrb-text>
+          </button>
+          <ul class="dropdown-menu text-bg-dark">
+            <li>
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" class="me-2" underline="false" data-bs-dismiss="offcanvas">Open Emerald Savings Account</hrb-link>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown mt-3 mb-3">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <hrb-text style-type="body-copy">Debt Submission</hrb-text>
+          </button>
+          <ul class="dropdown-menu text-bg-dark">
+            <li>
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" class="me-2" underline="false" data-bs-dismiss="offcanvas">Debt Dispute Form</hrb-link>
+            </li>
+            <li>
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" class="me-2" underline="false" data-bs-dismiss="offcanvas">Tax Preparation Debt Removal Form</hrb-link>
+            </li>
+          </ul>
+        </div>
+        <hrb-link href="javascript:void (0)" [routerLink]="''" theme="white" class="ms-3" underline="false">Bank Product (Revealed) Audits</hrb-link>
+      </div>
+    </div>
+    <div class="d-flex">
+      <hrb-link href="javascript:void (0)" [routerLink]="''" theme="white" class="me-2" underline="false" icon="nav-home" icon-position="left"></hrb-link>
+      <hrb-link href="javascript:void (0)" (click)="logout()" theme="white" class="me-2" underline="false">Logout</hrb-link>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <hrb-icon name="menu"></hrb-icon>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+            <hrb-icon name="close"></hrb-icon>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" underline="false" icon="help" icon-position="left" data-bs-dismiss="offcanvas">Perks Help</hrb-link>
+            </li>
+            <li class="nav-item mt-3">
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" underline="false" icon="settings" icon-position="left" data-bs-dismiss="offcanvas">EC Inventory</hrb-link>
+            </li>
+            <li class="nav-item mt-3">
+              <hrb-link href="javascript:void (0)" [routerLink]="'sidenav/paydownconsent'" theme="white" underline="false" icon="messages" icon-position="left" data-bs-dismiss="offcanvas">FSH Chat Window</hrb-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
